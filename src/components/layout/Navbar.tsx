@@ -30,7 +30,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/85 dark:bg-slate-950/85 backdrop-blur-xl border-b border-purple-500/15 py-3 shadow-md dark:shadow-lg dark:shadow-purple-950/20"
+          ? "bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 py-3 shadow-sm"
           : "bg-transparent py-4"
       }`}
     >
@@ -38,10 +38,10 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* LEFT: Official Sarasnova Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-8 h-8 rounded-xl bg-slate-900 border border-purple-500/30 p-0.5 overflow-hidden shadow-md group-hover:scale-105 transition-transform">
+            <div className="relative w-8 h-8 rounded-xl bg-slate-900 border border-indigo-500/30 p-0.5 overflow-hidden group-hover:scale-105 transition-transform">
               <Image
                 src="/images/sarasnova-logo.png"
-                alt="Sarasnova Logo"
+                alt="SARASnova Logo"
                 width={32}
                 height={32}
                 className="w-full h-full object-contain"
@@ -49,14 +49,14 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-extrabold text-lg text-slate-900 dark:text-white tracking-tight flex items-center gap-1.5">
-                Sarasnova <span className="text-purple-600 dark:text-purple-400">2.0</span>
+              <span className="font-extrabold text-lg text-slate-900 dark:text-white tracking-tight">
+                SARASnova
               </span>
             </div>
           </Link>
 
           {/* CENTER: Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-100/80 dark:bg-slate-900/40 p-1.5 rounded-full border border-purple-500/15 backdrop-blur-md">
+          <nav className="hidden md:flex items-center gap-1 bg-slate-100/80 dark:bg-slate-900/60 p-1.5 rounded-full border border-slate-200 dark:border-slate-800 backdrop-blur-md">
             {navItems.map((link) => (
               <div
                 key={link.label}
@@ -66,7 +66,7 @@ export function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className="px-3.5 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-purple-600 dark:hover:text-white transition-colors rounded-full hover:bg-purple-500/10 flex items-center gap-1"
+                  className="px-3.5 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white transition-colors rounded-full hover:bg-indigo-500/10 flex items-center gap-1"
                 >
                   <span>{link.label}</span>
                   {link.dropdownItems && <ChevronDown className="w-3 h-3 opacity-60" />}
@@ -74,12 +74,12 @@ export function Navbar() {
 
                 {/* Dropdown Menu */}
                 {link.dropdownItems && activeDropdown === link.label && (
-                  <div className="absolute top-full left-0 mt-2 w-60 rounded-2xl bg-white dark:bg-slate-900/95 border border-purple-500/20 shadow-2xl backdrop-blur-xl p-2 z-50 space-y-1">
+                  <div className="absolute top-full left-0 mt-2 w-60 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl backdrop-blur-xl p-2 z-50 space-y-1">
                     {link.dropdownItems.map((item) => (
                       <Link
                         key={item.label}
                         href={item.href}
-                        className="block p-2.5 rounded-xl hover:bg-purple-500/10 transition-colors"
+                        className="block p-2.5 rounded-xl hover:bg-indigo-500/10 transition-colors"
                       >
                         <div className="text-xs font-bold text-slate-900 dark:text-slate-100">{item.label}</div>
                         <div className="text-[10px] text-slate-500 dark:text-slate-400">{item.description}</div>
@@ -97,12 +97,12 @@ export function Navbar() {
 
             <Link
               href="/login"
-              className="px-4 py-2 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-purple-600 dark:hover:text-white transition-colors"
+              className="px-4 py-2 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white transition-colors"
             >
               Login
             </Link>
 
-            <Button href="/contact" variant="primary" size="sm" className="gap-1.5 shadow-md shadow-purple-600/30">
+            <Button href="/contact" variant="primary" size="sm" className="gap-1.5">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Book a Demo</span>
             </Button>
@@ -113,7 +113,7 @@ export function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="p-2 rounded-xl border border-purple-500/20 text-slate-700 dark:text-slate-300 hover:bg-purple-500/10"
+              className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
               aria-label="Open Mobile Menu"
             >
               <Menu className="w-5 h-5" />

@@ -5,17 +5,17 @@ import { ShieldCheck } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-purple-500/15 dark:border-purple-500/20 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 py-16">
+    <footer className="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 py-16">
       <Container size="xl" className="space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Brand Col */}
           <div className="md:col-span-5 space-y-4">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-tr from-purple-600 via-indigo-600 to-purple-500 text-white font-bold text-xl shadow-md">
+              <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-indigo-600 text-white font-bold text-xl">
                 S
               </div>
               <span className="font-extrabold text-xl text-slate-900 dark:text-white tracking-tight">
-                Sarasnova <span className="text-purple-600 dark:text-purple-400">2.0</span>
+                SARASnova
               </span>
             </Link>
 
@@ -36,27 +36,27 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/features" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/features" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Features &amp; Modules
                 </Link>
               </li>
               <li>
-                <Link href="/#features" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/#features" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Solutions for SMBs
                 </Link>
               </li>
               <li>
-                <Link href="/integrations" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/integrations" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Tally &amp; WhatsApp Integrations
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/pricing" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Pricing Plans
                 </Link>
               </li>
               <li>
-                <Link href="/#saras" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/#saras" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Ask SARAS AI Copilot
                 </Link>
               </li>
@@ -70,22 +70,22 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/about" className="hover:text-purple-600 dark:hover:text-purple-400">
-                  About Sarasnova
+                <Link href="/about" className="hover:text-indigo-600 dark:hover:text-indigo-400">
+                  About SARASnova
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/contact" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Contact Support
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/privacy" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-purple-600 dark:hover:text-purple-400">
+                <Link href="/terms" className="hover:text-indigo-600 dark:hover:text-indigo-400">
                   Terms of Service
                 </Link>
               </li>
@@ -94,9 +94,9 @@ export function Footer() {
         </div>
 
         {/* Copyright strip */}
-        <div className="pt-8 border-t border-purple-500/10 dark:border-purple-500/20 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
+        <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
           <div>
-            © {new Date().getFullYear()} Sarasnova AI Inc. All rights reserved. Made for Indian Businesses 🇮🇳
+            © {new Date().getFullYear()} SARASnova AI Inc. All rights reserved. Made for Indian Businesses 🇮🇳
           </div>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:underline">

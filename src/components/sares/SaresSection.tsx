@@ -18,9 +18,6 @@ export function SaresSection() {
 
   return (
     <section id="saras" className="py-20 md:py-28 relative overflow-hidden bg-slate-50 dark:bg-slate-900/20 text-slate-900 dark:text-white transition-colors">
-      {/* Ambient background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-500/10 dark:bg-purple-600/15 rounded-full blur-3xl -z-10 pointer-events-none" />
-
       <Container size="xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* LEFT SIDE CONTENT */}
@@ -43,7 +40,7 @@ export function SaresSection() {
             <div className="space-y-3 pt-2">
               {sarasFeatures.map((feat, fIdx) => (
                 <div key={fIdx} className="flex items-center gap-3">
-                  <div className="p-1 rounded-full bg-purple-100 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400">
+                  <div className="p-1 rounded-full bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400">
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">
@@ -73,7 +70,7 @@ export function SaresSection() {
                 title="Receivables Alert"
                 value="₹48.07L Overdue"
                 subtitle="5 Priority accounts"
-                icon={<Users className="w-4 h-4 text-purple-600 dark:text-purple-400" />}
+                icon={<Users className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />}
                 color="purple"
                 positionClass="absolute -top-6 -left-6 z-20"
               />
@@ -99,7 +96,7 @@ export function SaresSection() {
               <SaresContextNode
                 title="Sales Intelligence"
                 value="+408.2% Growth"
-                subtitle="ABC Electronics"
+                subtitle="Live metrics"
                 icon={<BarChart3 className="w-4 h-4 text-blue-600 dark:text-blue-400" />}
                 color="blue"
                 positionClass="absolute -bottom-6 -right-6 z-20"

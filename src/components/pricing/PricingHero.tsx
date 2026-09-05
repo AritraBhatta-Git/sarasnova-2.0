@@ -9,8 +9,6 @@ import { Button } from "@/components/ui/Button";
 export function PricingHero() {
   return (
     <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-white dark:bg-slate-950 text-slate-900 dark:text-white overflow-hidden transition-colors">
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-purple-500/10 dark:bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
-
       <Container size="xl">
         <div className="text-center max-w-3xl mx-auto space-y-6">
           <Badge variant="purple" icon={<Sparkles className="w-3.5 h-3.5" />}>
@@ -27,15 +25,15 @@ export function PricingHero() {
           </p>
 
           <div className="pt-2 flex items-center justify-center gap-4">
-            <Button href="/contact" variant="primary" size="lg" className="group shadow-xl shadow-purple-600/30">
-              <span>Book a Free Demo</span>
+            <Button href="/contact" variant="primary" size="lg" className="group">
+              <span>Book a Demo</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
 
-          <div className="pt-6 flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-slate-500 dark:text-slate-400 border-t border-purple-500/15">
-            <span className="flex items-center gap-1.5 text-purple-700 dark:text-purple-300">
-              <CheckCircle2 className="w-4 h-4 text-purple-500" /> Full Tally Integration Included
+          <div className="pt-6 flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800">
+            <span className="flex items-center gap-1.5 text-indigo-700 dark:text-indigo-300">
+              <CheckCircle2 className="w-4 h-4 text-indigo-500" /> Full Tally Integration Included
             </span>
             <span className="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Unlimited WhatsApp Alerts

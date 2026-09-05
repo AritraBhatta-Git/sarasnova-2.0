@@ -1,10 +1,10 @@
 export const SITE_CONFIG = {
-  name: "Sarasnova 2.0",
+  name: "SARASnova",
   tagline: "The AI CFO for Indian Businesses",
   description:
-    "Sarasnova 2.0 connects with Tally, reads your data in real-time, and turns it into clarity, insights, and action—every single day.",
+    "SARASnova connects with Tally, reads your data in real-time, and turns it into clarity, insights, and action—every single day.",
   whatsappNumber: "+919876543210",
-  demoUrl: "/book-demo",
+  demoUrl: "/contact",
   loginUrl: "/login",
 };
 
@@ -22,7 +22,7 @@ export const SAMPLE_DASHBOARD_DATA = {
   breakdown: [
     { label: "Cash Flow", score: 69, color: "bg-emerald-500" },
     { label: "Profitability", score: 62, color: "bg-amber-500" },
-    { label: "Sales Momentum", score: 90, color: "bg-purple-500" },
+    { label: "Sales Momentum", score: 90, color: "bg-indigo-500" },
     { label: "Receivables", score: 60, color: "bg-rose-500" },
   ],
 };
