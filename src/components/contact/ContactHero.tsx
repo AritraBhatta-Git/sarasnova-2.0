@@ -13,16 +13,16 @@ export function ContactHero() {
       <Container size="xl">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <Badge variant="purple" icon={<Sparkles className="w-3.5 h-3.5" />}>
-            LET&apos;S TALK
+            GET IN TOUCH
           </Badge>
 
-          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.15] text-slate-900 dark:text-white">
-            Ready to make <br />
-            <span className="gradient-text-purple-blue">better business decisions?</span>
+          <h1 className="text-4xl sm:text-5xl font-black tracking-tight leading-[1.15] text-slate-900 dark:text-white">
+            Let’s build a <br />
+            <span className="gradient-text-purple-blue">clearer business.</span>
           </h1>
 
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
-            Speak with our business intelligence team or request a live 1-on-1 demonstration using sample Tally data.
+            Connect with the SARASnova team for a live 1-on-1 demo, product discussion, or business intelligence consultation.
           </p>
         </div>
       </Container>

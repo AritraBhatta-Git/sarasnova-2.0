@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
@@ -11,33 +10,33 @@ export function PricingFAQ() {
 
   const faqs = [
     {
-      q: "What is included in Sarasnova 2.0?",
-      a: "Sarasnova 2.0 includes all 8 core intelligence modules (Daily Pulse, Problems Indicator, Cash Flow Risk, Profitability Risk, Sales Performance, Supplier Risk, Receivables Recovery, and Dead Stock), native TallyPrime 2-way sync, WhatsApp daily briefings, and SARAS AI Copilot.",
+      q: "What plans are available in SARASnova?",
+      a: "SARASnova offers 4 structured tiers: Tier I (Core AI at ₹10,000/mo), Tier II (AI Strategy at ₹15,000/mo), Tier III (Virtual CFO at ₹20,000/mo), and Tier IV (Custom Enterprise). Tiers I, II, and III have a standard ₹50,000 one-time setup fee.",
     },
     {
-      q: "How does pricing work?",
-      a: "Sarasnova 2.0 is billed as a straightforward annual platform subscription tailored to your transaction volume and ledger size. Book a demo to get a customized quote for your business.",
+      q: "What is included in the ₹50,000 one-time setup fee?",
+      a: "The one-time setup fee covers seamless Tally/ERP connector setup, custom ledger mapping, initial data cleaning, automated cloud warehouse pipeline configuration, and team onboarding.",
     },
     {
-      q: "Can I see a demo before subscribing?",
-      a: "Yes! You can book a free 15-minute live demo with your own sample Tally data to see how Sarasnova surfaces cash flow risks, overdue receivables, and morning WhatsApp briefings.",
+      q: "Can I upgrade between tiers as my business grows?",
+      a: "Yes. You can upgrade from Tier I (Core AI) to Tier II (AI Strategy) or Tier III (Virtual CFO) at any time to unlock bottleneck diagnostics, continuous variance monitoring, and monthly CA strategy reviews.",
     },
     {
-      q: "Does Sarasnova work with TallyPrime?",
-      a: "Absolutely. Sarasnova is built from the ground up for Indian SMBs using Tally ERP 9 and TallyPrime. Data syncs securely in the background with zero manual voucher export.",
+      q: "Does SARASnova work with TallyPrime & Tally ERP 9?",
+      a: "Yes. SARASnova connects directly with Tally ERP 9 and TallyPrime. Data syncs securely in the background with zero manual voucher export.",
     },
     {
-      q: "Can I use Sarasnova on mobile?",
-      a: "Yes. Sarasnova is fully responsive across mobile browsers, and key daily summaries, critical alerts, and payment reminder actions are delivered directly to your WhatsApp.",
+      q: "Can I see a demo with my own business data before choosing a plan?",
+      a: "Absolutely. You can book a free 1-on-1 discovery session with our team to see SARASnova run on sample or live Tally data.",
     },
     {
-      q: "Can I communicate with Sarasnova through WhatsApp?",
-      a: "Yes. You receive your 7:30 AM Daily Pulse on WhatsApp, get instant alerts when bills cross due dates, and can send payment reminders to customers in 1 click.",
+      q: "How does WhatsApp integration work?",
+      a: "Your daily business pulse, critical margin alerts, and overdue payment notifications are delivered directly to your WhatsApp. You can also trigger 1-click payment reminder messages to customers.",
     },
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white dark:bg-slate-950 text-slate-900 dark:text-white border-t border-purple-500/10 transition-colors">
+    <section className="py-16 md:py-24 bg-white dark:bg-slate-950 text-slate-900 dark:text-white border-t border-slate-200 dark:border-slate-800 transition-colors">
       <Container size="xl" className="space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <Badge variant="purple" icon={<HelpCircle className="w-3.5 h-3.5" />}>
@@ -45,7 +44,7 @@ export function PricingFAQ() {
           </Badge>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            Got questions about <span className="gradient-text-purple-blue">Sarasnova pricing?</span>
+            Got questions about <span className="gradient-text-purple-blue">SARASnova pricing?</span>
           </h2>
         </div>
 
@@ -60,24 +59,18 @@ export function PricingFAQ() {
               >
                 <div className="flex items-center justify-between font-extrabold text-sm sm:text-base text-slate-900 dark:text-white">
                   <span>{faq.q}</span>
-                  {isOpen ? <ChevronUp className="w-4 h-4 text-purple-600 dark:text-purple-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
+                  {isOpen ? (
+                    <ChevronUp className="w-4 h-4 text-purple-600 dark:text-purple-400 shrink-0" />
+                  ) : (
+                    <ChevronDown className="w-4 h-4 text-slate-400 shrink-0" />
+                  )}
                 </div>
 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.2 }}
-                      className="overflow-hidden"
-                    >
-                      <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed font-normal pt-3 border-t border-slate-200 dark:border-slate-800">
-                        {faq.a}
-                      </p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                {isOpen && (
+                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed font-normal pt-3 border-t border-slate-200 dark:border-slate-800">
+                    {faq.a}
+                  </p>
+                )}
               </div>
             );
           })}
