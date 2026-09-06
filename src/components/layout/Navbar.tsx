@@ -50,7 +50,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold text-lg text-slate-900 dark:text-white tracking-tight">
-                SARASnova
+                SARAS<span className="gradient-text-purple-blue">nova</span>
               </span>
             </div>
           </Link>

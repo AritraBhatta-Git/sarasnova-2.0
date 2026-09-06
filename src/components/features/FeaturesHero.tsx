@@ -21,7 +21,7 @@ export function FeaturesHero() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-900 dark:text-white">
               Eight intelligence modules. <br />
               <span className="gradient-text-purple-blue">One clearer view</span> <br />
-              of your business.
+              of your business
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-xl">

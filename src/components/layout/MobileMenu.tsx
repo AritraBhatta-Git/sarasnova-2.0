@@ -33,7 +33,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 S
               </div>
               <span className="font-bold text-lg text-slate-900 dark:text-white tracking-tight">
-                SARASnova
+                SARAS<span className="gradient-text-purple-blue">nova</span>
               </span>
             </div>
 

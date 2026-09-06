@@ -5,14 +5,14 @@ import { Target, Calendar, CheckCircle2, TrendingUp, Layers, Compass } from "luc
 
 export function StrategyBlueprintVisual() {
   const quarters = [
-    { q: "Q1", title: "Receivables Liquidation", target: "₹35L Recovered", progress: 100, status: "Achieved", color: "text-emerald-600 dark:text-emerald-400", bar: "bg-emerald-500" },
-    { q: "Q2", title: "Inventory Optimization", target: "Dead Stock < 5%", progress: 75, status: "In Progress", color: "text-indigo-600 dark:text-indigo-400", bar: "bg-indigo-600" },
-    { q: "Q3", title: "SKU Margin Expansion", target: "+6.5% Net Margin", progress: 30, status: "Upcoming", color: "text-slate-500 dark:text-slate-400", bar: "bg-indigo-400" },
-    { q: "Q4", title: "Working Capital Reserve", target: "90-Day Runway", progress: 10, status: "Planned", color: "text-slate-500 dark:text-slate-400", bar: "bg-slate-300 dark:bg-slate-700" },
+    { q: "Q1", title: "Receivables Liquidation", target: "₹35L Recovered", progress: 100, status: "Achieved", color: "text-purple-600 dark:text-purple-400", bar: "bg-purple-600" },
+    { q: "Q2", title: "Inventory Optimization", target: "Dead Stock < 5%", progress: 75, status: "In Progress", color: "text-purple-500 dark:text-purple-300", bar: "bg-purple-500" },
+    { q: "Q3", title: "SKU Margin Expansion", target: "+6.5% Net Margin", progress: 30, status: "Upcoming", color: "text-purple-400 dark:text-purple-400/90", bar: "bg-purple-400" },
+    { q: "Q4", title: "Working Capital Reserve", target: "90-Day Runway", progress: 10, status: "Planned", color: "text-slate-500 dark:text-slate-400", bar: "bg-purple-300 dark:bg-purple-900/60" },
   ];
 
   return (
-    <div className="w-full h-full rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-7 shadow-2xl flex flex-col justify-between font-sans text-slate-900 dark:text-white transition-colors">
+    <div className="w-full h-full rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-7 shadow-2xl flex flex-col justify-between font-sans text-slate-900 dark:text-white transition-colors">
       {/* Visual Header */}
       <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
         <div className="flex items-center gap-3">
@@ -47,7 +47,7 @@ export function StrategyBlueprintVisual() {
                 {quarter.q} Target
               </span>
               <span className={`text-xs font-bold ${quarter.color} flex items-center gap-1`}>
-                {quarter.status === "Achieved" && <CheckCircle2 className="w-3.5 h-3.5" />}
+                {quarter.status === "Achieved" && <CheckCircle2 className="w-3.5 h-3.5 text-purple-500" />}
                 {quarter.status}
               </span>
             </div>

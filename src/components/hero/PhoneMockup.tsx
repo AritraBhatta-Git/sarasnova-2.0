@@ -5,7 +5,7 @@ import { ArrowUpRight, AlertTriangle, Sparkles } from "lucide-react";
 
 export function PhoneMockup() {
   return (
-    <div className="relative w-full max-w-[340px] sm:max-w-[380px] mx-auto">
+    <div className="relative w-full max-w-[310px] xs:max-w-[340px] sm:max-w-[380px] mx-auto">
       {/* Realistic Smartphone Frame - Still */}
       <div className="relative rounded-[44px] border-[6px] border-slate-800 dark:border-slate-800 bg-slate-950 shadow-xl overflow-hidden font-sans">
         {/* Notch / Speaker */}
@@ -18,15 +18,15 @@ export function PhoneMockup() {
           {/* Top Bar */}
           <div className="flex items-center justify-between pt-1">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-[10px] text-white">
+              <div className="w-6 h-6 rounded-lg bg-purple-600 flex items-center justify-center font-bold text-[10px] text-white">
                 S
               </div>
               <div>
                 <div className="text-xs font-bold text-white flex items-center gap-1">
                   SARASnova AI
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-ping" />
                 </div>
-                <div className="text-[9px] text-emerald-400 font-semibold">Live Tally Sync</div>
+                <div className="text-[9px] text-purple-400 font-semibold">Live Tally Sync</div>
               </div>
             </div>
             <div className="px-2 py-0.5 rounded-full bg-slate-800 border border-slate-700 text-[10px] text-slate-300 font-medium">
@@ -35,8 +35,8 @@ export function PhoneMockup() {
           </div>
 
           {/* Greeting Box */}
-          <div className="p-3.5 rounded-2xl bg-slate-900 border border-indigo-500/20">
-            <div className="text-[10px] text-indigo-400 font-extrabold uppercase tracking-wider">
+          <div className="p-3.5 rounded-2xl bg-slate-900 border border-purple-500/20">
+            <div className="text-[10px] text-purple-400 font-extrabold uppercase tracking-wider">
               Good Morning, Rajesh 👋
             </div>
             <div className="text-xs font-bold text-white mt-0.5">
@@ -50,7 +50,7 @@ export function PhoneMockup() {
             <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
               <div className="text-[9px] text-slate-400 font-semibold">Sales (This Month)</div>
               <div className="text-sm font-extrabold text-white">₹18.85L</div>
-              <div className="text-[9px] text-emerald-400 font-semibold flex items-center gap-0.5">
+              <div className="text-[9px] text-purple-400 font-semibold flex items-center gap-0.5">
                 <ArrowUpRight className="w-2.5 h-2.5" /> +408.2% vs last mo
               </div>
             </div>
@@ -66,7 +66,7 @@ export function PhoneMockup() {
             <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
               <div className="text-[9px] text-slate-400 font-semibold">Receivables</div>
               <div className="text-sm font-extrabold text-white">₹48.07L</div>
-              <div className="text-[9px] text-amber-400 font-semibold">5 overdue clients</div>
+              <div className="text-[9px] text-purple-400 font-semibold">5 overdue clients</div>
             </div>
 
             {/* OD / Overdraft */}
@@ -80,15 +80,15 @@ export function PhoneMockup() {
           {/* Business Health Score */}
           <div className="p-3 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="relative w-11 h-11 rounded-full border-4 border-amber-500/80 border-t-amber-400 flex items-center justify-center font-extrabold text-xs text-white">
+              <div className="relative w-11 h-11 rounded-full border-4 border-purple-500/80 border-t-purple-400 flex items-center justify-center font-extrabold text-xs text-white">
                 68
               </div>
               <div>
                 <div className="text-[10px] text-slate-400 uppercase font-semibold">Business Health</div>
-                <div className="text-xs font-bold text-amber-400">Needs Attention</div>
+                <div className="text-xs font-bold text-purple-400">Needs Attention</div>
               </div>
             </div>
-            <button className="px-2.5 py-1 rounded-lg bg-indigo-600 text-white text-[10px] font-semibold hover:bg-indigo-500 transition-colors">
+            <button className="px-2.5 py-1 rounded-lg bg-purple-600 text-white text-[10px] font-semibold hover:bg-purple-500 transition-colors">
               View Details →
             </button>
           </div>

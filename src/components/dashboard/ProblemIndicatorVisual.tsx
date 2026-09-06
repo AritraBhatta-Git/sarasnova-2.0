@@ -5,7 +5,7 @@ import { AlertTriangle, AlertCircle, TrendingDown, ArrowUpRight, ShieldAlert, Fi
 
 export function ProblemIndicatorVisual() {
   return (
-    <div className="w-full h-full rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-7 shadow-2xl flex flex-col justify-between font-sans text-slate-900 dark:text-white transition-colors">
+    <div className="w-full h-full rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-7 shadow-2xl flex flex-col justify-between font-sans text-slate-900 dark:text-white transition-colors">
       {/* Visual Header */}
       <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
         <div className="flex items-center gap-3">

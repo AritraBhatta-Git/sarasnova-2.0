@@ -21,16 +21,7 @@ export const navItems: NavItem[] = [
       { label: "Dead Stock", description: "Identify slow-moving inventory > 90 days to free capital", href: "/features#dead-stock" },
     ],
   },
-  {
-    label: "Solutions",
-    href: "/#features",
-    hasDropdown: true,
-    dropdownItems: [
-      { label: "For Founders & CEOs", description: "High-level health score & growth levers", href: "/#features" },
-      { label: "For CFOs & Finance", description: "Deep Tally analytics & cash flow forecast", href: "/#features" },
-      { label: "For Sales Operations", description: "Dead stock alerts & customer payment trends", href: "/#features" },
-    ],
-  },
+
   {
     label: "Integrations",
     href: "/integrations",

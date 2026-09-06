@@ -1,7 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
 import { AboutHero } from "@/components/about/AboutHero";
-import { CompanyIntro } from "@/components/about/CompanyIntro";
 import { FoundingTeam } from "@/components/about/FoundingTeam";
 import { WhySarasnovaExists } from "@/components/about/WhySarasnovaExists";
 import { DataToDecision } from "@/components/about/DataToDecision";
@@ -22,10 +21,7 @@ export default function AboutPage() {
       {/* 1. Hero / Mission & Vision + Interactive UI Pipeline */}
       <AboutHero />
 
-      {/* 2. The Company Behind SARASnova (Entity Info & Presence) */}
-      <CompanyIntro />
-
-      {/* 3. Founding Leadership Section (Aniket & Visesh Jaiswal) */}
+      {/* 2. Founding Leadership Section (Aniket & Visesh Jaiswal) */}
       <FoundingTeam />
 
       {/* 4. Why SARASnova Exists (Old Reality → The Gap → SARASnova Reality) */}

@@ -6,7 +6,7 @@ import { Bot, User, MessageCircle, Send, Mic, ShieldCheck, Cpu } from "lucide-re
 
 export function SarasConversation() {
   const fullQuery = "Show me customers over 60 days overdue with more than ₹1 lakh outstanding.";
-  
+
   // States: 'typing' -> 'thinking' -> 'result'
   const [phase, setPhase] = useState<"typing" | "thinking" | "result">("typing");
   const [typedText, setTypedText] = useState("");
@@ -177,7 +177,7 @@ export function SarasConversation() {
           <input
             type="text"
             readOnly
-            value={phase === "typing" ? typedText : "Ask SARAS anything about your business..."}
+            value={phase === "typing" ? typedText : "Ask SARAS anything about your business"}
             className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-slate-400 cursor-default"
           />
           <div className="absolute right-3 top-2.5 text-slate-400" title="Voice Input">

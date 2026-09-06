@@ -15,13 +15,9 @@ export function Footer() {
                 S
               </div>
               <span className="font-extrabold text-xl text-slate-900 dark:text-white tracking-tight">
-                SARASnova
+                SARAS<span className="gradient-text-purple-blue">nova</span>
               </span>
             </Link>
-
-            <p className="text-sm text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">
-              The AI CFO for Indian Businesses. Connecting Tally data with real-time financial intelligence, predictive cash flow, and automated decision making.
-            </p>
 
             <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 pt-2">
               <ShieldCheck className="w-4 h-4 text-emerald-500" />

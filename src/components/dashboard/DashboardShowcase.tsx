@@ -136,7 +136,7 @@ export function DashboardShowcase() {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* STEP NAVIGATION PILLS WITH LIVE PROGRESS FILL */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
+          <div className="flex items-center justify-start sm:justify-center gap-2 sm:gap-4 overflow-x-auto pb-3 pt-1 px-1 sm:px-0 scrollbar-none snap-x touch-pan-x">
             {steps.map((step, idx) => {
               const isActive = activeStep === idx;
               return (
@@ -146,7 +146,7 @@ export function DashboardShowcase() {
                     setActiveStep(idx);
                     setIsPaused(true);
                   }}
-                  className={`relative overflow-hidden px-4 py-2.5 rounded-full text-xs font-bold transition-all flex items-center gap-2 border ${
+                  className={`relative overflow-hidden px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 sm:gap-2 shrink-0 snap-center border ${
                     isActive
                       ? "bg-indigo-600 text-white border-indigo-600 shadow-md scale-105"
                       : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-800 hover:border-slate-400"
@@ -292,7 +292,7 @@ export function DashboardShowcase() {
                 </div>
 
                 {/* Large Product Visual */}
-                <div className="h-[460px] sm:h-[500px] w-full rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-3 shadow-xl overflow-hidden">
+                <div className="min-h-[460px] sm:min-h-[500px] w-full rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/90 p-2.5 sm:p-3 shadow-xl overflow-hidden">
                   {renderVisual(activeStep)}
                 </div>
               </motion.div>
